@@ -1,6 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const User = require('../models/userModel.js')
-const Ticket = require('../models/ticketModal.js')
+const Ticket = require('../models/ticketModel.js')
 
 // @desc Get user tickets
 // @route GET /api/tickets
