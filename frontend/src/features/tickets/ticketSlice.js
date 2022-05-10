@@ -23,7 +23,7 @@ export const createTicket = createAsyncThunk('tickets/create', async (ticket, th
   }
 })
 
-// Create new ticket
+// Get user tickets
 export const getTickets = createAsyncThunk('tickets/getAll', async (_, thunkAPI) => { 
   try {
     const token = thunkAPI.getState().auth.user.token
