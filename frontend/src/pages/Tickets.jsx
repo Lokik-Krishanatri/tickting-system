@@ -5,6 +5,7 @@ import { getTickets, reset } from '../features/tickets/ticketSlice'
 import Spinner from '../components/Spinner.jsx'
 import BackButton from '../components/BackButton.jsx'
 import TicketItem from '../components/TicketItem'
+
 function Tickets() {
   const { tickets, isLoading, isSuccess } = useSelector((state) => state.ticket) 
   const dispatch = useDispatch()
@@ -43,4 +44,4 @@ function Tickets() {
   )
 }
 
-export default Tickets
+export default Tickets 
