@@ -36,6 +36,8 @@ export const getTickets = createAsyncThunk('tickets/getAll', async (_, thunkAPI)
   }
 })
 
+
+
 export const ticketSlice = createSlice({ 
   name: 'ticket',
   initialState,
@@ -97,6 +99,20 @@ export const getTicket = createAsyncThunk('tickets/get', async (ticketId, thunkA
 
     return thunkAPI.rejectWithValue(message)
   }
+})
+
+// Close user ticket
+export const closeTicket = createAsyncThunk('tickets/get', async (ticketId, thunkAPI) => { 
+  try {
+    const token = thunkAPI.getState().auth.user.token
+
+    return await ticketService.closeTicket(ticketId, token)
+  } catch(error) { 
+    const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString()
+
+    return thunkAPI.rejectWithValue(message)
+  }
+  
 })
 
 export const { reset } = ticketSlice.actions
