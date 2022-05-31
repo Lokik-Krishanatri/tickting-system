@@ -1,48 +1,20 @@
 # Support Ticket System
 
-This is a MERN web application of a support desk ticket system.
+This website is a support desk ticketing system that allows users to view, create, edit, and delete support tickets.
 
-## Getting Started
+**Link to project:** https://tien-support-ticketing-system.herokuapp.com/
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+![Support Ticket System](https://github.com/tn-tran/support-ticketing-system/blob/main/support-ticketing-system.gif)
 
-### Installation
+## Tech used
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) ![](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white) ![](https://img.shields.io/badge/json%20web%20tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=pink)
 
-A step by step guide that will tell you how to get the development environment up and running.
+My focus was to learn the MERN full web stack. Along the way, I learned many different libraries such as React Routers and Axios.
 
-Clone the project.
+## Optimizations
 
-```sh
-$ git clone https://github.com/tn-tran/support-ticketing-system.git
-```
+One way I optimized the website was by bundling the website for production. By default, the website is in development mode. React includes helpful warnings which is useful for development, but it can make your React app size large. 
 
-Install dependencies from frontend & `backend` folder
+## Lessons Learned
 
-```sh
-$ cd frontend
-$ npm install
-$ cd backend
-$ npm install
-```
-
-Run the project from root directory.
-
-```sh
-$ npm run dev
-```
-
-### Technologies
-
-Frontend
-
-- HTML, CSS, JavaScript, React, Redux
-- axios, react-router-dom, react-toastify, react-icons, react-modal
-
-Backend
-
-- Node.js, MongoDB, Express
-- bcryptjs, colors, concurrently, dotenv, express-async-handler, jsonwebtoken, mongoose
-
-## Acknowledgments
-
-- [Brad Traversy's](https://github.com/bradtraversys) course on React front-to-back
+Planning and designing are important steps before any implementations. 
